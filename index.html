@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdJ1ux1whzTs_g45VoGMX6HQpowslSsfBBVHvEbarmvZ0mOQ2QSdR-ZF7m&s=10'); /* Replace 'your-image-url.jpg' with the URL of your image */
+            background-size: cover; /* Cover the entire background */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-position: down; /* Down the image */
+            color: white; /* Set text color to white for better readability */
+            font-family: Arial, sans-serif; /* Choose a font family */
+        }
+        /* Additional styling for content */
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .password-box {
+            display: block; /* Initially show the password box */
+        }
+        .masked-content {
+            display: none; /* Initially hide the masked content */
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "HRIDOY") {
+                document.getElementById("password-box").style.display = "none"; // Hide the password box
+                document.getElementById("masked-content").style.display = "block"; // Show the masked content
+                document.getElementById("password-result").innerHTML = "Password correct"; // Show password correct message
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div id="password-box" class="password-box">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password">
+            <br>
+            <button onclick="checkPassword()">Submit</button>
+        </div>
+        <div id="password-result"></div>
+        
+        <!-- Masked HTML content -->
+        <div id="masked-content" class="masked-content">
+            <!-- Your masked HTML content here -->
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TCS CUSTOM SMS</title>
+<style>
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #000;
+        color: #0f0;
+    }
+    .container {
+        width: 400px;
+        padding: 20px;
+        background-color: #000;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border: 2px solid #0f0;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #0f0;
+    }
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #0f0;
+        border-radius: 4px;
+        background-color: #000;
+        color: #0f0;
+    }
+    button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    .clock {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #0f0;
+    }
+    /* Glitch effect */
+    @keyframes glitch {
+        0% {
+            transform: translate(0);
+        }
+        25% {
+            transform: translate(-2px, 2px);
+        }
+        50% {
+            transform: translate(-2px, -2px);
+        }
+        75% {
+            transform: translate(2px, 2px);
+        }
+        100% {
+            transform: translate(2px);
+        }
+    }
+    .glitch {
+        animation: glitch 0.05s infinite alternate-reverse;
+    }
+</style>
+</head>
+<body>
+<div class="container"><center>
+    <h2>TCS CUSTOM SMS</h2>
+    <form id="smsForm">
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send SMS</button>
+    </form>
+    
+</div>
+
+<script>
+document.getElementById("smsForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    var phoneNumber = document.getElementById("phoneNumber").value;
+    var message = document.getElementById("message").value;
+    
+    var apiUrl = 'https://arman83939.000webhostapp.com/customsms.php?number=' + encodeURIComponent(phoneNumber) + '&msg=' + encodeURIComponent(message);
+    
+    fetch(apiUrl)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('SMS sent successfully!');
+        }
+        return response.json();
+    })
+    .then(data => {
+        alert('SMS sent successfully!');
+    })
+    .catch(error => {
+        alert('SMS sent successfully!');
+        console.error('Error:', error);
+    });
+});
+</script>
+
+
+
+<blockquote>
+     
+    <style>
+        /* Button styling */
+        .button {
+            background-color: cyan; /* cyan */
+            border: none;
+            color: black;
+            padding: 7px 14px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Add shadow */
+            animation: shadow-pulse 2s infinite; /* Add animation */
+        }
+
+        /* Button hover effect */
+        .button:hover {
+            background-color: #45a049; /* Darker green */
+        }
+
+        /* Keyframes for shadow pulse animation */
+        @keyframes shadow-pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+            }
+            100% {
+                box-shadow: 0 0 0 10px rgba(0, 0, 0, 0), 0 0 0 20px rgba(0, 0, 0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- Button for Telegram Channel -->
+  <img src="https://cdn3.emoji.gg/emojis/8777_Approval.gif" height="28" width="28"></img>  <button class="button" onclick="window.open('https://t.me/BANGLADESH_CYBER_SECURITY_HACKER')">OUR TELEGRAM CHANNEL</button><br><br>
+
+    <!-- Button for Admin Contact -->
+  <img src="https://cdn3.emoji.gg/emojis/8777_Approval.gif" height="28" width="28"></img>  <button class="button" onclick="window.open('https://t.me/BANGLADESH_CYBERSECURITY')">ADMIN CONTACT</button><br><br>
+
+    <!-- Button for Facebook Page -->
+   <img src="https://cdn3.emoji.gg/emojis/8777_Approval.gif" height="28" width="28"></img> <button class="button" onclick="window.open('https://www.facebook.com/profile.php?id=61552670890159')">OUR FACEBOOK PAGE</button>
+
+</body>
+</html>
